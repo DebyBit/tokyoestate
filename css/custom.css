@@ -1,0 +1,11 @@
+ul.du-list{
+    font-size: 18px; 
+    font-weight: normal;
+}
+ul.du-list li{
+    list-style-type: disc;
+}
+/*
+.du-list + li{
+    list-style-type: disc !important;
+}*/

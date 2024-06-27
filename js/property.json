@@ -1,0 +1,17 @@
+[
+    {"fthome":"Stunning Family Home in Meguro Ward","ftlocation":"Ookayama, Meguro","ftbed":6,"ftbath":4,"ftsqft":5577,"ftamount":500000000,"ftimage":"fut1.webp"},
+    {"fthome":"Nakameguro Higashiyama Designer House","ftlocation":"Higashiyama, Meguro","ftbed":2,"ftbath":2,"ftsqft":1738,"ftamount":500000000,"ftimage":"fut2.webp"},
+    {"fthome":"Wellith Tower Atago Toranomon","ftlocation":"Toranomon, Minato","ftbed":2,"ftbath":1,"ftsqft":821,"ftamount":458000000,"ftimage":"fut3.webp"},
+    {"fthome":"Atlas Tower Roppongi","ftlocation":"Roppongi, Minato","ftbed":1,"ftbath":1,"ftsqft":963,"ftamount":400000000,"ftimage":"fut4.webp"},
+    {"fthome":"Premist Akasaka Hinokicho Koen","ftlocation":"Akasaka, Minato","ftbed":3,"ftbath":1,"ftsqft":891,"ftamount":260000000,"ftimage":"fut5.jpg"},
+    {"fthome":"Churis Nishiazabu","ftlocation":"NishiAzabu, Minato","ftbed":2,"ftbath":1,"ftsqft":745,"ftamount":120400000,"ftimage":"fut6.jpg"},
+    {"fthome":"Open residence Yoyogi-uehara","ftlocation":"Yoyogi-uehara, Shibuya","ftbed":2,"ftbath":1,"ftsqft":663,"ftamount":100000000,"ftimage":"fut7.webp"},
+    {"fthome":"Harumi Flag Sun Village","ftlocation":"Harumi, Chuo","ftbed":2,"ftbath":1,"ftsqft":668,"ftamount":85000000,"ftimage":"fut8.webp"},
+    {"fthome":"Monvert Yotsuya","ftlocation":"Wakaba, Shinjuku","ftbed":1,"ftbath":1,"ftsqft":582,"ftamount":69000000,"ftimage":"fut9.webp"},
+    {"fthome":"Excellent Azabujuban","ftlocation":"HigashiAzabu, Minato","ftbed":1,"ftbath":1,"ftsqft":330,"ftamount":51000000,"ftimage":"fut10.webp"},
+    {"fthome":"Nagano House for Sale","ftlocation":"Oaza Oiwake Asamayama, Karuizawa-machi, Kitasaku-gun, Nagano","ftbed":3,"ftbath":1,"ftsqft":1765,"ftamount":74000000,"ftimage":"fut11.jpg"},
+{"fthome":"Kyoto Apartment for Sale","ftlocation":"Saga Tenryuji Road 2-1, Ukyo-ku, Kyoto-shi, Kyoto","ftbed":4,"ftbath":1,"ftsqft":928,"ftamount":61800000,"ftimage":"fut12.jpg"},
+{"fthome":"Kanagawa House for Sale","ftlocation":"Aoba Ward, Motoishikawacho, Kanagawa","ftbed":3,"ftbath":1,"ftsqft":713,"ftamount":55800000,"ftimage":"fut13.webp"},
+{"fthome":"Hokkaido Apartment for Sale","ftlocation":"Soga, Niseko-cho, Abuta-gun, Hokkaido","ftbed":2,"ftbath":2,"ftsqft":1284,"ftamount":294860000,"ftimage":"fut14.webp"},
+{"fthome":"Hokkaido House for Sale","ftlocation":"Kamiumokbe, Biei-cho, Kamikawa-gun, Hokkaido","ftbed":3,"ftbath":1,"ftsqft":3053,"ftamount":270000000,"ftimage":"fut15.webp"}
+    ]

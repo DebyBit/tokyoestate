@@ -1,0 +1,580 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tokyo Toshestate Inc</title>
+
+    <meta name="author" content="tokyotoshestateinc-jp.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+   <!-- font -->
+   <link rel="stylesheet" href="fonts/fonts.css">
+   <!-- Icons -->
+   <link rel="stylesheet" href="fonts/font-icons.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/animate.css">
+   <link rel="stylesheet"type="text/css" href="css/styles.css"/>
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	 <script>
+    $(function(){
+	
+	phasereaveal()
+	
+		function headlead() {
+		  return new Promise((resolve, reject) => {
+			resolve($("#headBrunch").load("_head.html"))
+		  });
+		}
+		async function footlead() {
+		  await headlead()
+		  return new Promise((resolve, reject) => {
+			resolve($("#footBrunch").load("_foot.html"))
+		  });
+		}
+		async function footmodal() {
+		  await footlead()
+		  return new Promise((resolve, reject) => {
+			resolve($("#footModal").load("_modal.html"))
+		  });
+		}
+		async function footlinklead() {
+		  await footmodal()
+		  return new Promise((resolve, reject) => {
+			resolve($("#footLink").load("_footlink.html"))
+		  });
+		}
+		
+		async function phasereaveal() {
+		  await footlinklead()
+		  return new Promise((resolve, reject) => {
+			setTimeout(() => {
+			//resolve( document.querySelector(".preload").style.display = "none")
+			}, 3000);
+		  });
+		}
+    });
+  </script>
+
+</head>
+
+<body class="body counter-scroll">
+
+    <div class="preload preload-container">
+        <div class="boxes ">
+            <div class="box">
+                <div></div> <div></div> <div></div> <div></div>
+            </div>
+            <div class="box">
+                <div></div> <div></div> <div></div> <div></div>
+            </div>
+            <div class="box">
+                <div></div> <div></div> <div></div> <div></div>
+            </div>
+            <div class="box">
+                <div></div> <div></div> <div></div> <div></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- /preload -->
+
+    <div id="wrapper">
+        <div id="pagee" class="clearfix">
+
+           <div id="headBrunch"></div>
+            <!-- Slider -->
+            <section class="flat-slider home-1">
+                <div class="container relative">
+                    <div class="row">    
+                        <div class="col-lg-12">
+                            <div class="slider-content">
+                                <div class="heading text-center">
+                                    <h1 class="text-white animationtext slide">
+                                        Find Your
+                                            <span class="tf-text s1 cd-words-wrapper"> 
+                                                <span class="item-text is-visible">Dream Home</span>
+                                                <span class="item-text is-hidden">Perfect Home</span>
+                                                <span class="item-text is-hidden">Real Estate</span>
+                                            </span>  
+                                    </h1>
+                                    <p class="subtitle text-white body-1 wow fadeIn" data-wow-delay=".8s" data-wow-duration="2000ms">Looking for a new home in Japan? We are a real estate agency that will help you find the best residence you dream of, let’s discuss about your dream house?</p>
+                                </div>
+								<!--- Search -->
+                                <div class="flat-tab flat-tab-form" style="display:none;">
+                                    <ul class="nav-tab-form style-1 justify-content-center" role="tablist">
+                                        <li class="nav-tab-item" role="presentation">   
+                                            <a href="index.html#forRent" class="nav-link-item active"  data-bs-toggle="tab">For Rent</a>
+                                        </li>
+                                        <li class="nav-tab-item" role="presentation">
+                                            <a href="index.html#forSale" class="nav-link-item" data-bs-toggle="tab">For Sale</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade active show" role="tabpanel">
+                                            <div class="form-sl">
+                                                <form method="post">
+                                                    <div class="wd-find-select">
+                                                        <div class="inner-group">
+                                                            <div class="form-group-1 search-form form-style">
+                                                                <label>Keyword</label>
+                                                                <input type="text" class="form-control" placeholder="Search Keyword." value="" name="s" title="Search for" required="">
+                                                            </div>
+                                                            <div class="form-group-2 form-style">
+                                                                <label>Location</label>
+                                                                <div class="group-ip">
+                                                                    <input type="text" class="form-control" placeholder="Search Location" value="" name="s" title="Search for" required="">
+                                                                    <a href="index.html#" class="icon icon-location"></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group-3 form-style">
+                                                                <label>Type</label>
+                                                                <div class="group-select">
+                                                                    <div class="nice-select" tabindex="0"><span class="current">All</span>
+                                                                        <ul class="list">  
+                                                                            <li data-value class="option selected">All</li>                                                        
+                                                                            <li data-value="villa" class="option">Villa</li>
+                                                                            <li data-value="studio" class="option">Studio</li>
+                                                                            <li data-value="office" class="option">Office</li>
+                                                                            <li data-value="house" class="option">House</li>
+
+
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>                                                    
+                                                            </div>
+                                                            <div class="form-group-4 box-filter">
+                                                                <a class="filter-advanced pull-right">
+                                                                     <span class="icon icon-faders"></span> 
+                                                                     <span class="text-1">Advanced</span>                                                                      
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <button type="submit" class="tf-btn primary" href="#">Search</button>
+                                                    </div>
+                                                    <div class="wd-search-form">
+                                                        <div class="grid-2 group-box group-price">
+                                                            <div class="widget-price">
+                                                                <div class="box-title-price">
+                                                                    <span class="title-price">Price Range</span>
+                                                                    <div class="caption-price">
+                                                                        <span>from</span>
+                                                                        <span id="slider-range-value1" class="fw-7"></span>
+                                                                        <span>to</span>
+                                                                        <span id="slider-range-value2" class="fw-7"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div id="slider-range"></div>
+                                                                <div class="slider-labels">
+                                                                    <div>
+                                                                        <input type="hidden" name="min-value" value="">
+                                                                        <input type="hidden" name="max-value" value="">                                                                                  
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="widget-price">
+                                                                <div class="box-title-price">
+                                                                    <span class="title-price">Size Range</span>
+                                                                    <div class="caption-price">
+                                                                        <span>from</span>
+                                                                        <span id="slider-range-value01" class="fw-7"></span>
+                                                                        <span>to</span>
+                                                                        <span id="slider-range-value02" class="fw-7"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div id="slider-range2"></div>
+                                                                <div class="slider-labels">
+                                                                <div>                                                                             
+                                                                    <input type="hidden" name="min-value2" value="">
+                                                                    <input type="hidden" name="max-value2" value="">      
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="grid-2 group-box">
+                                                            <div class="group-select grid-2">
+                                                                <div class="box-select">
+                                                                    <label class="title-select text-variant-1">Rooms</label>
+                                                                    <div class="nice-select" tabindex="0"><span class="current">2</span>
+                                                                        <ul class="list"> 
+                                                                            <li data-value="1" class="option">1</li>
+                                                                            <li data-value="2" class="option selected">2</li>
+                                                                            <li data-value="3" class="option">3</li>
+                                                                            <li data-value="4" class="option">4</li>
+                                                                            <li data-value="5" class="option">5</li>
+                                                                            <li data-value="6" class="option">6</li>
+                                                                            <li data-value="7" class="option">7</li>
+                                                                            <li data-value="8" class="option">8</li>
+                                                                            <li data-value="9" class="option">9</li>
+                                                                            <li data-value="10" class="option">10</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="box-select">
+                                                                    <label class="title-select text-variant-1">Bathrooms</label>
+                                                                    <div class="nice-select" tabindex="0"><span class="current">2</span>
+                                                                        <ul class="list"> 
+                                                                            <li data-value="1" class="option">1</li>
+                                                                            <li data-value="2" class="option selected">2</li>
+                                                                            <li data-value="3" class="option">3</li>
+                                                                            <li data-value="4" class="option">4</li>
+                                                                            <li data-value="5" class="option">5</li>
+                                                                            <li data-value="6" class="option">6</li>
+                                                                            <li data-value="7" class="option">7</li>
+                                                                            <li data-value="8" class="option">8</li>
+                                                                            <li data-value="9" class="option">9</li>
+                                                                            <li data-value="10" class="option">10</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="group-select grid-2">
+                                                                <div class="box-select">
+                                                                    <label class="title-select text-variant-1">Bedrooms</label>
+                                                                    <div class="nice-select" tabindex="0"><span class="current">2</span>
+                                                                        <ul class="list"> 
+                                                                            <li data-value="1" class="option">1</li>
+                                                                            <li data-value="2" class="option selected">2</li>
+                                                                            <li data-value="3" class="option">3</li>
+                                                                            <li data-value="4" class="option">4</li>
+                                                                            <li data-value="5" class="option">5</li>
+                                                                            <li data-value="6" class="option">6</li>
+                                                                            <li data-value="7" class="option">7</li>
+                                                                            <li data-value="8" class="option">8</li>
+                                                                            <li data-value="9" class="option">9</li>
+                                                                            <li data-value="10" class="option">10</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="box-select">
+                                                                    <label class="title-select fw-5">Type</label>
+                                                                    <div class="nice-select" tabindex="0"><span class="current">2</span>
+                                                                        <ul class="list"> 
+                                                                            <li data-value="1" class="option">1</li>
+                                                                            <li data-value="2" class="option selected">2</li>
+                                                                            <li data-value="3" class="option">3</li>
+                                                                            <li data-value="4" class="option">4</li>
+                                                                            <li data-value="5" class="option">5</li>
+                                                                            <li data-value="6" class="option">6</li>
+                                                                            <li data-value="7" class="option">7</li>
+                                                                            <li data-value="8" class="option">8</li>
+                                                                            <li data-value="9" class="option">9</li>
+                                                                            <li data-value="10" class="option">10</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                           
+                                                        </div>
+                                                       
+                                                        <div class="group-checkbox">
+                                                            <div class="text-1">Amenities:</div>
+                                                            <div class="group-amenities mt-8 grid-6">
+                                                                <div class="box-amenities">
+                                                                    <fieldset class="amenities-item">
+                                                                        <input type="checkbox" class="tf-checkbox style-1" id="cb1" checked> 
+                                                                        <label for="cb1" class="text-cb-amenities">Air Condition</label>
+                                                                    </fieldset>
+                                                                    <fieldset class="amenities-item mt-12">
+                                                                        <input type="checkbox" class="tf-checkbox style-1" id="cb2"> 
+                                                                        <label for="cb2" class="text-cb-amenities">Cable TV</label>
+                                                                    </fieldset>
+                                                                    <fieldset class="amenities-item mt-12">
+                                                                        <input type="checkbox" class="tf-checkbox style-1" id="cb3"> 
+                                                                        <label for="cb3" class="text-cb-amenities">Ceiling Height</label>
+                                                                    </fieldset>
+                                                                    <fieldset class="amenities-item mt-12">
+                                                                        <input type="checkbox" class="tf-checkbox style-1" id="cb4"> 
+                                                                        <label for="cb4" class="text-cb-amenities">Fireplace</label>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="box-amenities">
+                                                                    <fieldset class="amenities-item">
+                                                                        <input type="checkbox" class="tf-checkbox style-1" id="cb5"> 
+                                                                        <label for="cb5" class="text-cb-amenities">Disabled Access</label>
+                                                                    </fieldset>
+                                                                    <fieldset class="amenities-item mt-12">
+                                                                        <input type="checkbox" class="tf-checkbox style-1" id="cb6" checked> 
+                                                                        <label for="cb6" class="text-cb-amenities">Elevator</label>
+                                                                    </fieldset>
+                                                                    <fieldset class="amenities-item mt-12">
+                                                                        <input type="checkbox" class="tf-checkbox style-1" id="cb7"> 
+                                                                        <label for="cb7" class="text-cb-amenities">Fence</label>
+                                                                    </fieldset>
+                                                                    <fieldset class="amenities-item mt-12">
+                                                                        <input type="checkbox" class="tf-checkbox style-1" id="cb8"> 
+                                                                        <label for="cb8" class="text-cb-amenities">Garden</label>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="box-amenities">
+                                                                    <fieldset class="amenities-item">
+                                                                        <input type="checkbox" class="tf-checkbox style-1" id="cb9" checked> 
+                                                                        <label for="cb9" class="text-cb-amenities">Floor</label>
+                                                                    </fieldset>
+                                                                    <fieldset class="amenities-item mt-12">
+                                                                        <input type="checkbox" class="tf-checkbox style-1" id="cb10"> 
+                                                                        <label for="cb10" class="text-cb-amenities">Furnishing</label>
+                                                                    </fieldset>
+                                                                    <fieldset class="amenities-item mt-12">
+                                                                        <input type="checkbox" class="tf-checkbox style-1" id="cb11" checked> 
+                                                                        <label for="cb11" class="text-cb-amenities">Garage</label>
+                                                                    </fieldset>
+                                                                    <fieldset class="amenities-item mt-12">
+                                                                        <input type="checkbox" class="tf-checkbox style-1" id="cb12"> 
+                                                                        <label for="cb12" class="text-cb-amenities">Pet Friendly</label>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="box-amenities">
+                                                                    <fieldset class="amenities-item">
+                                                                        <input type="checkbox" class="tf-checkbox style-1" id="cb13"> 
+                                                                        <label for="cb13" class="text-cb-amenities">Heating</label>
+                                                                    </fieldset>
+                                                                    <fieldset class="amenities-item mt-12">
+                                                                        <input type="checkbox" class="tf-checkbox style-1" id="cb14"> 
+                                                                        <label for="cb14" class="text-cb-amenities">Intercom</label>
+                                                                    </fieldset>
+                                                                    <fieldset class="amenities-item mt-12">
+                                                                        <input type="checkbox" class="tf-checkbox style-1" id="cb15"> 
+                                                                        <label for="cb15" class="text-cb-amenities">Parking</label>
+                                                                    </fieldset>
+                                                                    <fieldset class="amenities-item mt-12">
+                                                                        <input type="checkbox" class="tf-checkbox style-1" id="cb16"> 
+                                                                        <label for="cb16" class="text-cb-amenities">WiFi</label>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="box-amenities">
+                                                                    <fieldset class="amenities-item">
+                                                                        <input type="checkbox" class="tf-checkbox style-1" id="cb17"> 
+                                                                        <label for="cb17" class="text-cb-amenities">Renovation</label>
+                                                                    </fieldset>
+                                                                    <fieldset class="amenities-item mt-12">
+                                                                        <input type="checkbox" class="tf-checkbox style-1" id="cb18"> 
+                                                                        <label for="cb18" class="text-cb-amenities">Security</label>
+                                                                    </fieldset>
+                                                                    <fieldset class="amenities-item mt-12">
+                                                                        <input type="checkbox" class="tf-checkbox style-1" id="cb19"> 
+                                                                        <label for="cb19" class="text-cb-amenities">Swimming Pool</label>
+                                                                    </fieldset>
+                                                                    
+                                                                </div>
+                                                                <div class="box-amenities">
+                                                                    <fieldset class="amenities-item">
+                                                                        <input type="checkbox" class="tf-checkbox style-1" id="cb20"> 
+                                                                        <label for="cb20" class="text-cb-amenities">Window Type</label>
+                                                                    </fieldset>
+                                                                    <fieldset class="amenities-item mt-12">
+                                                                        <input type="checkbox" class="tf-checkbox style-1" id="cb21"> 
+                                                                        <label for="cb21" class="text-cb-amenities">Search property</label>
+                                                                    </fieldset>
+                                                                    <fieldset class="amenities-item mt-12">
+                                                                        <input type="checkbox" class="tf-checkbox style-1" id="cb22"> 
+                                                                        <label for="cb22" class="text-cb-amenities">Construction Year</label>
+                                                                    </fieldset>
+                                                                </div>
+
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                            
+                            
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </section> 
+            <!-- End Slider -->
+            <!-- Recommended -->
+            <section class="flat-section flat-recommended">
+                <div class="container">
+                    <div class="text-center wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+                        <div class="text-subtitle text-primary">Featured Properties</div>
+                        <h4 class="mt-4">Find your ideal home in Japan</h4>
+                    </div>
+                    <div class="flat-tab-recommended wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+                        
+                        <div class="tab-content"  style="margin-top:50px;">
+                            <div class="tab-pane fade active show" id="viewAll" role="tabpanel">
+                                <div class="row" id="featuresProducts">
+								
+								</div>
+								<div class="text-center">
+                                    <a href="properties.html" class="tf-btn primary size-1">View All Properties</a>
+                                </div>
+							</div>
+                    </div>
+   
+                </div>
+
+            </section>
+            <!-- End Recommended -->
+           
+            <!-- Service & Counter  -->
+            <section class="flat-section">
+                <div class="container">
+                    <div class="box-title style-1 wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+                        <div class="box-left">
+                            <div class="text-subtitle text-primary"></div>
+                            <h4 class="mt-4">Property Management For Your Tokyo Home</h4>
+                        </div>
+                       <!-- <a href="index.html#" class="btn-view"><span class="text">View All Services</span> <span class="icon icon-arrow-right2"></span> </a>-->
+                    </div>
+                    <div class="flat-service wrap-service wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration="2000ms">
+                        <div class="box-service hover-btn-view">
+                            <div class="icon-box">
+                                <span class="icon icon-buy-home"></span>
+                            </div>
+                            <div class="content">
+                                <h6 class="title">Buy Tokyo Property</h6>
+                                <p class="description">Did you know that anyone can buy freehold real estate in Tokyo? Whether you live overseas or reside in Tokyo, we are here to guide you.</p>
+                                
+                            </div>
+                        </div>
+                        <div class="box-service hover-btn-view">
+                            <div class="icon-box">
+                                <span class="icon icon-guarantee"></span>
+                            </div>
+                            <div class="content">
+                                <h6 class="title">Professional Property Management</h6>
+                                <p class="description">We provide comprehensive Property Management Services. Access seamless communication and control through our Owner's Portal.</p>
+                                
+                            </div>
+                        </div>
+                        <div class="box-service hover-btn-view">
+                            <div class="icon-box">
+                                <span class="icon icon-sale-home"></span>
+                            </div>
+                            <div class="content">
+                                <h6 class="title">Sell Tokyo Property</h6>
+                                <p class="description">When you are ready to sell or move on from your property in Tokyo, we are here to ensure that you get the best possible sale result.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flat-counter tf-counter wrap-counter wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration="2000ms" style="display:none;">
+                        <div class="counter-box">
+                            <div class="count-number">                                  
+                                <div class="number" data-speed="2000" data-to="85" data-inviewport="yes">85</div>                                   
+                            </div>
+                            <div class="title-count">Satisfied Clients</div>                              
+                        </div>
+                        <div class="counter-box">
+                            <div class="count-number"> 
+                                <div class="number" data-speed="2000" data-to="112" data-inviewport="yes">112</div>                                                      
+                            </div>
+                            <div class="title-count">Awards Received</div>                                                                           
+                        </div>
+                        <div class="counter-box">
+                            <div class="count-number"> 
+                                <div class="number" data-speed="2000" data-to="32" data-inviewport="yes">32</div>                                                      
+                            </div>
+                            <div class="title-count">Successful Transactions</div>                                                                           
+                        </div>
+                        <div class="counter-box">
+                            <div class="count-number"> 
+                                <div class="number" data-speed="2000" data-to="66" data-inviewport="yes">66</div>                                                      
+                            </div>
+                            <div class="title-count">Monthly Traffic</div>                                                                           
+                        </div>
+                    </div> 
+                </div>
+            </section>
+            <!-- End Service & Counter -->
+            <!-- Benefit -->
+            <section class="flat-section flat-benefit bg-surface">
+                <div class="container">
+                    <div class="box-title text-center wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+                        <div class="text-subtitle text-primary"></div>
+                        <h4 class="mt-4">Get More Value For Your Real Estate With Housing Japan </h4>
+                    </div>
+                    <div class="wrap-benefit wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+                        <div class="box-benefit">
+                            <div class="icon-box">
+                                <span class="icon icon-proven"></span>
+                            </div>
+                            <div class="content text-center">
+                                <h6 class="title">Proven Expertise</h6>
+                                <p class="description">Our seasoned team excels in real estate with years of successful market navigation, offering informed decisions and optimal results.</p>
+                            </div>
+                        </div>
+                        <div class="box-benefit">
+                            <div class="icon-box">
+                                <span class="icon icon-double-ruler"></span>
+                            </div>
+                            <div class="content text-center">
+                                <h6 class="title">Customized Solutions</h6>
+                                <p class="description">We pride ourselves on crafting personalized strategies to match your unique goals, ensuring a seamless real estate journey.</p>
+                            </div>
+                        </div>
+                        <div class="box-benefit">
+                            <div class="icon-box">
+                                <span class="icon icon-hand"></span>
+                            </div>
+                            <div class="content text-center">
+                                <h6 class="title">Transparent Partnerships</h6>
+                                <p class="description">Transparency is key in our client relationships. We prioritize clear communication and ethical practices, fostering trust and reliability throughout.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Benefit -->
+            <!-- Property  -->
+            <section class="flat-section flat-property">
+                <div class="container">
+                    <div class="box-title style-1 wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+                        <div class="box-left">
+                            <div class="text-subtitle text-primary">Top Properties</div>
+                            <h4 class="mt-4">Best Property Value</h4>
+                        </div>
+                        <a href="properties.html" class="tf-btn primary size-1">View All</a>
+                    </div>
+                    <div class="wrap-property">
+                        <div id="forSingleProperty" class="box-left  wow fadeInLeftSmall" data-wow-delay=".2s" data-wow-duration="2000ms" style="width:50%;">
+                            
+                        </div>
+                             
+                        <div id="forSaleProperties" class="box-right wow fadeInRightSmall" data-wow-delay=".2s" data-wow-duration="2000ms" style="width:50%;">
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Property  -->
+            
+           <div id="footBrunch"></div>
+        </div>
+        <!-- /#page -->
+
+    </div>
+
+
+
+    <!-- go top -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 286.138;"></path>
+        </svg>
+    </div>
+
+    <div id="footModal"></div>
+	<div id="footLink"></div>
+</body>
+</html>
+<script type="text/javascript" src="js/hppr.js"></script>

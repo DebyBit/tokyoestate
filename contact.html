@@ -1,0 +1,160 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tokyo Toshestate Inc</title>
+
+    <meta name="author" content="tokyotoshestateinc-jp.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+   <!-- font -->
+   <link rel="stylesheet" href="fonts/fonts.css">
+   <!-- Icons -->
+   <link rel="stylesheet" href="fonts/font-icons.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/animate.css">
+   <link rel="stylesheet"type="text/css" href="css/styles.css"/>
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	 <script>
+    $(function(){
+	
+	phasereaveal()
+	
+		function headlead() {
+		  return new Promise((resolve, reject) => {
+			resolve($("#headBrunch").load("_head.html"))
+		  });
+		}
+		async function footlead() {
+		  await headlead()
+		  return new Promise((resolve, reject) => {
+			resolve($("#footBrunch").load("_foot.html"))
+		  });
+		}
+		async function footmodal() {
+		  await footlead()
+		  return new Promise((resolve, reject) => {
+			resolve($("#footModal").load("_modal.html"))
+		  });
+		}
+		async function footlinklead() {
+		  await footmodal()
+		  return new Promise((resolve, reject) => {
+			resolve($("#footLink").load("_footlink.html"))
+		  });
+		}
+		
+		async function phasereaveal() {
+		  await footlinklead()
+		  return new Promise((resolve, reject) => {
+			setTimeout(() => {
+			//resolve( document.querySelector(".preload").style.display = "none")
+			}, 3000);
+		  });
+		}
+    });
+  </script>
+
+</head>
+
+<body class="body">
+
+    <div class="preload preload-container">
+        <div class="boxes ">
+            <div class="box">
+                <div></div> <div></div> <div></div> <div></div>
+            </div>
+            <div class="box">
+                <div></div> <div></div> <div></div> <div></div>
+            </div>
+            <div class="box">
+                <div></div> <div></div> <div></div> <div></div>
+            </div>
+            <div class="box">
+                <div></div> <div></div> <div></div> <div></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- /preload -->
+
+    <div id="wrapper">
+        <div id="pagee" class="clearfix">
+
+            <div id="headBrunch"></div>
+            <!-- End Main Header -->
+            <!-- Page Title -->
+            <section class="flat-title-page style-2">
+                <div class="container">
+                    <ul class="breadcrumb">
+                        <li><a href="./">Home</a></li>
+                        <li>/ Contact Us</li>
+                    </ul>
+                    <h2 class="text-center">Contact Us</h2>
+                </div>
+            </section>
+            <!-- End Page Title -->
+            <section class="flat-section flat-contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="contact-content">
+                                <h5>Drop Us An Email</h5>
+                                <p class="body-2 text-variant-1">Feel free to connect with us through our online channels for updates, news, and more.</p>
+								<p>Our website offers thousands of houses for sale and rent in Japan. By contacting us we will invioce you the best location, property type, price range, the number of bedrooms, our database will select all the listings available. Whether your next new home is in the largest city, Tokyo, the bustling city, Osaka, the city with beautiful nature, Hokkaido or the city with one of the most beautiful beaches, Okinawa – you can easily find great property whether it's a house, a condo or an apartment. </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="contact-info">
+                                <h5>Contact Us</h5>
+                                <ul>
+                                    
+                                    <li class="box">
+                                        <div class="text-1 title">Information:</div>
+                                        <p class="p-16 text-variant-1">info@tokyotoshestateinc-jp.com</p>
+                                    </li>
+                                    
+                                    <li class="box">
+                                           
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- footer -->
+            <div id="footBrunch"></div>
+            <!-- end footer -->
+            
+
+        </div>
+        <!-- /#page -->
+
+    </div>
+
+
+
+    <!-- go top -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 286.138;"></path>
+        </svg>
+    </div>
+	<div id="footModal"></div>
+	<div id="footLink"></div>
+
+</body>
+
+</html>
