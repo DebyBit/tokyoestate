@@ -52,7 +52,7 @@ function showfeatures(){
                                                 </ul>
                                                 <div class="d-flex align-items-center">
                                                     <div class="h7 fw-7">&#165;${formattedAmount}</div>
-                                                    <span class="text-variant-1">/SqFT</span>
+                                                    
                                                 </div>
                                             </div>
                                         </li>
